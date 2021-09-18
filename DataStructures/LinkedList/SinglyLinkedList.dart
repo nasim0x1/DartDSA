@@ -34,7 +34,7 @@ class LinkedList {
   }
 
   // it will inset node at last of linkedlist
-  void inset(val) {
+  void insert(val) {
     if (this.root == null) {
       this.root = Node(val: val);
     } else {
@@ -92,7 +92,7 @@ main(List<String> args) {
   LinkedList linkedList = LinkedList(1);
   linkedList.view();
   linkedList.insertHead(0);
-  linkedList.inset(2);
+  linkedList.insert(2);
   linkedList.view();
   print("Current LinkedList Length is " + linkedList.length().toString());
   linkedList.deleteHead();
